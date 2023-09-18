@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background-color: #3a3625;
+}
+
+@font-face{
+    font-family: 'pincel';
+    src: url('.././font/Regular Brush.otf');
+
+}
+
+/*===============================INICIO HEADER===============================*/
+
+/*Criar o bloco principal*/
+.header{
+    width: 100%;
+    height: 52px;
+    background-color: #e4d492;
+
+}
+
+/*Criar um bloco center para centralizar*/
+.center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Criar bloco para a logo*/
+.logo{
+    width: 30%;
+    display: inline-block;
+}
+
+/*Bloco Para alinhar as tags com a logo*/
+.tags{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+/*Tirar as margens que vem junto do display: inline-block*/
+.logo, .tags{
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+
+/*Bloco Lista para alinhar as tags no fim*/
+.lista{
+    text-align: end;
+    margin-right: 20px;
+}
+
+.logo img{
+    width: 64px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.logo h1{
+    display: inline-block;
+    vertical-align: top;
+
+    margin-top: -3px;
+    margin-left: 10px;
+
+    font-family: 'pincel';
+    font-size: 35px;
+    color: #e5a530;
+
+    cursor: default;
+}
+
+.lista ul li{
+    display: inline-block;
+    padding: 15px 14px;
+    font-size: 19px;
+    color: #e5a530;
+
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+.lista ul li:hover{
+    /*
+    border-bottom: #046e8c 2px solid;
+    color: #046e8c;
+    */
+    
+    background-color: #3a3625;
+}
+
+
+/*===============================FIM HEADER===============================*/
+
+
+/*===============================INICIO CORPO INDEX===============================*/
+
+.container .center{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container .center > img{
+    width: 746px;
+    height: 280px;
+
+    border: 1px solid #e5a530;
+}
+
+.principais .blogs{
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 370px;
+    height: 280px;
+
+    margin-top: 20px;
+
+    color: #e5a530;
+
+    border: 1px solid #e5a530;
+}
+
+
+.principais .blogs p{
+    text-align: center;
+    width: 370px;
+    height: 100px;
+    padding: 0 25px;
+    font-size: 14px;
+}
+
+.principais .blogs > img{
+    vertical-align: bottom;
+    width: 350px;
+    height: 145px;
+}
+
+
+/*===============================FIM CORPO INDEX===============================*/
+
+
+/*============================INICIO CORPO GALERIA============================*/
+
+.galeria .center{
+    text-align: center;
+}
+
+.galeria .pieces{
+    width: 25%;
+    padding: 10px 8px;
+
+    margin: 20px 10px;
+
+    display: inline-block;
+    vertical-align: top;
+
+
+    color: #e5a530;
+    font-size: 15px;
+
+    border: 2px solid #e8a52d;
+}
+
+.pieces img{
+    width: 192px;
+    height: 141px;
+
+    text-align: center;
+}
+
+.galeria .center > h2{
+    margin-top: 20PX;
+    color: #e5a530;
+    font-family: 'pincel';
+    font-size: 30px;
+}
+
+
+
+/*==============================FIM CORPO GALERIA==============================*/
+
+
+/*==============================INICIO CORPO FORM==============================*/
+
+.h1Form{
+    text-align: center;
+    color: #e5a530;
+    margin:30px;
+
+    font-family: 'pincel';
+    font-size: 30px;
+}
+
+.formulario .center{
+    width: 670px;
+    text-align: center;
+    border: #e8a52d 2px solid;
+}
+
+.formulario form{
+    width: 600px;
+    
+    display: inline-block;
+    text-align: center;
+}
+
+form .input{
+    display: inline-block;
+    width: 275px;
+
+    margin: 20px 10px;
+
+    text-align: justify;
+}
+
+.input input[type=text], .input input[type=text], .input input[type=email], .input input[type=tel]{
+    width: 275px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    padding: 5px 10px;
+    color: #e4d492;
+}
+
+form .input-area{
+    margin: 0 10px;
+    display: inline-block;
+    width: 575px;
+}
+
+.input-area textarea{
+    width: 575px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    padding: 5px 10px;
+    color: #e4d492;
+}
+
+.input label, .input-area label{
+    display: inline-block;
+    width: 100%;
+    text-align: justify;
+    color: #e5a530;
+}
+
+.input-submit{
+    width: 575px;
+    margin: 20px 10px;
+    text-align: end;
+}
+
+.input-submit input{
+    width: 100px;
+    height: 50px;
+
+    background-color: #e8a52d;
+    border: none;
+
+    font-weight: bold;
+    color: #3a3625;
+}
+
+.input-submit input:hover{
+    cursor: pointer;
+}
+
+
+/*================================FIM CORPO FORM================================*/
+
+
+/*==============================INICIO CORPO BLOG==============================*/
+.h1Blog{
+    text-align: center;
+    color: #e5a530;
+    margin:30px;
+
+    font-family: 'pincel';
+    font-size: 30px;
+}
+
+.blogNoticias .center{
+    text-align: center;
+}
+
+.center .conteudo{
+    width: 500px;
+    display: inline-block;
+    border: #e8a52d 2px solid;
+    margin: 10px 0;
+}
+
+.conteudo h2{
+    font-size: 22px;
+    color:#e4d492;
+    margin: 10px 0;
+}
+
+.conteudo p{
+    padding: 5px 20px;
+    font-size: 14px;
+    color:#e4d492;
+    text-align: justify;
+}
+
+.conteudo img{
+    width: 350px;
+    height: 150px;
+    margin: 20px 0;
+}

@@ -1,0 +1,437 @@
+/*Resetar os atributos iniciais do css*/
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*Adicionando uma nova fonte*/
+@font-face {
+    font-family: hokia;
+    src: url('../fonts/Hokia Regular.ttf');
+}
+
+/*Class center para centralizar os elementos*/
+.center{
+    width: 100%;
+    max-width: 1280px;
+    /*centralizar a box dentro de outra box*/
+    margin: 0 auto;
+}
+
+/*Definindo atributos gerais do header*/
+.header{
+    width: 100%;
+    padding: 0 2%;
+    height: 60px;
+    background-color: #0b4e5d;
+}
+
+/*Definindo atributos do icon*/
+.header img{
+    width: 55px;
+    margin-left: 50px;
+}
+
+/*Definindo atributos do H1 do header*/
+.header h1{
+    /*atributos gerais e do box*/
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -10px;
+    /*Atributos de texto*/
+    color: rgb(8, 8, 8);
+    font-size: 60px;
+    font-family: 'hokia';
+}
+
+/*Definindo atributos da classe container-banner*/
+.container-banner{
+    /*Altura e largura*/
+    width: 100%;
+    height: 557px;
+    /*Atributos referentes a imagem de fundo*/
+    background-image: url('../imagens/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 2%;
+}
+
+/*Atributos base herança*/
+.container-banner > .center{
+    height: 100%;
+}
+
+/*Definindo atributos da class form*/
+.form{
+    /*Altura e largura*/
+    width: 400px;
+    height: calc(100% + 30px);
+    /*cor de fundo*/
+    background-color: rgba(255, 255, 255, 0.7);
+    /*Aonde o fundo vai começar a ser aplicado*/
+    background-clip: padding-box;
+    /*background-origin tem o mesmo conceito, mas com imagens*/
+    /*Mover a posição da classe*/
+    float: right;
+    position: relative;
+    top: -15px;
+    /*padding e border*/
+    border: 7px solid rgba(82, 78, 78, 0.7);
+    padding: 10px;
+}
+
+/*Definindo atributos do h2 dentro da classe form*/
+.form > h2{
+    font-family: 'Mogra', cursive;
+    font-size: 21px;
+    color: #888;
+    text-align: center;
+}
+
+/*Definindo atributo margin-top*/
+.input-container{
+    margin-top: 20px;
+}
+
+/*Definindo atributos do span dentro classe input-container*/
+.input-container span{
+    font-family: 'Mogra', cursive;
+    color: #888;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Definindo atributos do p dentro classe input-container*/
+.form p{
+    font-family: 'Mogra', cursive;
+    color: #888;
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    color: red;
+}
+
+/*Atributos gerais para todos os inputs*/
+.input-container input[type=text], input[type=email], input[type=tel]{
+    margin-top: 5px;
+    width: 344px;
+    height: 30px;
+    border: 1px solid rgb(141, 139, 139);
+    padding: 5px;
+}
+
+/*retirar o outline na hora de focar em um input*/
+.input-container input:focus{
+    outline: 0;
+}
+
+/*Centralizar o o input submit*/
+.form .input-submit-container{
+    text-align: center;
+}
+
+/*Atributos do submit*/
+.form input[type=submit]{
+    /*Configuração base*/
+    display: inline-block;
+    cursor:  pointer;
+    /*Largura e altura*/
+    width: 280px;
+    height: 55px;
+    /*Background color*/
+    background-color: #f9251d;
+    /*borda e margin*/
+    border: 0;
+    border-bottom: 4px solid #e0211a;
+    margin-top: 50px;
+    /*texto*/
+    font-family: 'mogra';
+    color: white;
+    font-size: 28px;
+    
+}
+
+/*Hover submit*/
+.form input[type=submit]:hover{
+    background-color: #d61b18;
+    border-bottom: 4px solid #b41c1a;
+}
+
+/*Definindo padroes da box intro*/
+.container-intro{
+    width: 560px;
+    height: 280px;
+    float: left;
+    margin-top: 80px;
+    padding: 10px 30px;
+    background-color: #0b4e5d86;
+}
+
+/*Posicionamento da lista*/
+.container-intro ul{
+    list-style-position: inside;
+}
+
+/*Ajustar listas*/
+.container-intro ul li{
+    color: white;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/*Definindo padroes para a box two*/
+.container-two{ 
+    padding: 40px 2%;
+    background-color: #aaa;
+    text-align: center;
+}
+
+/*Definindo padroes para o paragrafo da box two*/
+.container-two p{
+    width: 100%;
+    max-width: 768px;
+    margin: 15px 0;
+    display: inline-block;
+    text-align: justify;
+}
+
+/*Definindo imagem arrow*/
+.arrow{
+    position: relative;
+    top: 65px;
+    width: 45px;
+    height: 45px;
+    background-image: url('../imagens/arrow.png');
+    background-size: 100% 100%;
+    left: 50%;
+    margin-left: -22.5px;
+}
+/*Distanciamento section 1*/
+.section-1{
+    padding: 90px 2%;
+}
+
+/*Atributos para o h2*/
+.section-1 h2{
+    text-align: center;
+    color: #0b4e5d;
+}
+
+/*Alinhando os containers*/
+.container-section{
+    margin-top: 60px;
+    text-align: center;
+}
+
+/*=======Trabalhando Com o Single=========*/
+.single{
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+}
+
+.single p{
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.single img{
+    width: 70px;
+    height: 70px;
+}
+
+
+/*=======Fim do trabalhando Com o Single=========*/
+
+.footer{
+    padding: 20px 0;
+    border-top: solid 3px #5e5e5e;
+    text-align: center;
+    color: #888;
+}
+
+.footer p{
+    margin-top: 8px;
+}
+
+/*
+Media
+
+Esta dando erro do 1113 até 1081
+
+*/
+
+@media screen and (max-width: 1024px) {
+    .header{
+        width: 100%;
+        padding: 2px 0;
+        text-align: center;
+        height: auto;
+    }
+
+    /*Definindo atributos da classe container-banner*/
+    .container-banner{
+        /*Altura e largura*/
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+
+    /*Definindo atributos da class form*/
+    .form{
+        /*Altura e largura*/
+        width: 60%;
+        height: 100%;
+        max-width: 400px;
+
+        /*Mover a posição da classe*/
+        float: right;
+        top: 0px;
+        padding: 10px;
+    }
+
+    .input-container input[type=text], input[type=email], input[type=tel]{
+        width: 100%;
+    }
+
+    /*Atributos do submit*/
+    .form input[type=submit]{
+        /*Largura e altura*/
+        width: 100%;
+        /*max-width: não orá passar de 280px*/
+        max-width: 280px;
+        height: 55px;
+    }
+
+    
+
+    /*Definindo padroes da box intro*/
+    .container-intro{
+        width: 40%;
+        max-width: 500px;
+        height: auto;
+        float: left;
+        padding: 10px 30px;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-intro{
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 90%;
+    }
+
+    .form{
+        float: none;
+        display: inline-block;
+        width: 90%;
+    }
+
+    .single{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        padding: 30px 0;
+    }
+    
+    .single p{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=====================================================================
+OUTRA MANEIRA DE MEXER NO SINGLE
+
+=====================================================================
+.single{
+    display: inline-block;
+    margin-right: -4px;
+    width: 33.333%;
+    padding: 30px;
+}
+
+Caso não tenha um ".center" para controlar a largura total
+.single:last-child{
+    margin-right: 0;
+}
+=====================================================================
+
+=====================================================================
+.single{
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    padding: 20px;
+}
+
+.single p{
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.container-section:first-of-type .single{
+    margin-left: 2%;
+}
+
+.container-section:last-of-type .single{
+    margin-right: 0px;
+}
+
+.single img{
+    width: 100px;
+    height: 100px;
+}
+=====================================================================
+
+
+=====================================================================
+*/
