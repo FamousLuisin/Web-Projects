@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato";
+}
+
+/*Apagar flutuações do float*/
+.clear{clear: both;}
+
+.center{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header{
+    background: #3665af;
+    padding:  8px 0;
+}
+
+.logo{
+    float: left;
+    color: white;
+}
+
+.logo h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+form.form-login{
+    float: right;
+}
+
+.form-login .form-element{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.form-element p{
+    color: white;
+    font-size: 15px;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+    margin-top: 4px;
+    border: 0;
+    height: 18px;
+    padding-left: 5px;
+}
+
+.form-element input[type=submit]{
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid #09449c;
+    border-right: 2px solid #09449c;
+    background-color: #215ab2;
+    color: white;
+    padding: 3px 5px;
+}
+
+.form-element input[type=submit]:hover{
+    background-color: #09449c;
+}
+
+.form-element input:focus{
+    outline: 0;
+}
+
+section.main{
+    background: linear-gradient(white, #D3D8E8);
+    padding: 40px 0;
+}
+
+.image{
+    float: left;
+    width: 60%;
+}
+
+.image img{
+    max-width: 100%;
+}
+
+.abrir-conta{
+    width: 40%;
+    float: left;
+}
+
+.abrir-conta h2{
+    color: black;
+    font-size: 30px;
+}
+
+.abrir-conta h3{
+    font-size: 18px;
+    color: #222;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+form.create-account{
+    margin-top: 10px;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+}
+
+.w100{
+    padding: 0 5px;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+form.create-account input{
+    width: 100%;
+    margin-top: 8px;
+}
+
+form.create-account input[type=email],
+form.create-account input[type=text],
+form.create-account input[type=password]{
+    height: 32px;
+    padding-left: 5px;
+    font-size: 18px;
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+
+form.create-account input[type=email],
+form.create-account input[type=text],
+form.create-account input[type=password]:focus{
+    outline: 0;
+}
+
+form.create-account input[type=submit]{
+    height: 40px;
+    background: linear-gradient(#67ae55, #578843);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    max-width: 300px;
+    margin-top: 30px;
+}
