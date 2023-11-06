@@ -47,8 +47,8 @@ form.form-login{
 .form-element input[type=password]{
     margin-top: 4px;
     border: 0;
-    height: 18px;
-    padding-left: 5px;
+    height: 22px;
+    padding-left: 3px;
 }
 
 .form-element input[type=submit]{
@@ -114,7 +114,6 @@ form.create-account{
     padding: 0 5px;
     width: 100%;
     float: left;
-    text-align: center;
 }
 
 form.create-account input{
@@ -148,4 +147,118 @@ form.create-account input[type=submit]{
     text-align: center;
     max-width: 300px;
     margin-top: 30px;
+}
+
+form .w100 h4{
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+form select{
+    float: left;
+    margin-top: 5px;
+    padding: 4px 4px;
+}
+
+.radio {
+    float: left;
+    margin: 10px 0;
+    margin-right: 10px;
+}
+
+.radio [type=radio]{
+    width: auto !important;
+    display: inline-block;
+}
+
+.radio > h4{
+    display: inline-block;
+}
+
+section.footer{
+    padding: 20px 0;
+    background-color: white;
+}
+
+section.footer a{
+    color: #365899;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+section.footer .center{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #aaa;
+}
+
+section.footer a.selected-lingua{
+    color: #737373;
+}
+
+@media screen and (max-width: 768px){
+    .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    form.form-login{
+        float: none;
+        width: 100%;
+        display: inline-block;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .form-login .form-element{
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .form-element p{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .form-element input[type=email],
+    .form-element input[type=password]{
+        margin-top: 4px;
+        border: 0;
+        height: 22px;
+        padding-left: 3px;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .form-element input[type=submit]{
+        width: 80px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .abrir-conta{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .radio{
+        float: none;
+        display: inline-block;
+    }
+
+    form select{
+        float: none;
+        margin-right: -4px;
+    }
+
+    form.w100 input[type=submit]{
+        text-align: center;
+    }
+
 }
